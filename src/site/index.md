@@ -19,19 +19,6 @@ From this point we should already have:
 
 
 
-## Post pages
-
-The pages found in in the posts
-
-<ul class="listing">
-{%- for page in collections.post -%}
-  <li>
-    <a href="{{ page.url }}">{{ page.data.title }}</a> -
-    <time datetime="{{ page.date }}">{{ page.date | dateDisplay("LLLL d, y") }}</time>
-  </li>
-{%- endfor -%}
-</ul>
-
 ## Links from an external data source
 
 These links were sourced from [hawksworx.com](https://www.hawksworx.com/feed.json) at build time.
