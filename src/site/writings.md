@@ -1,3 +1,8 @@
+---
+title: My Writings
+layout: layouts/base.njk
+---
+
 <ul class="listing">
 {%- for page in collections.post -%}
   <li>
